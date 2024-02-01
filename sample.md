@@ -1,12 +1,13 @@
 ```mermaid
-graph TD;
-    Base url = "https://studies.cs.helsinki.fi/exampleapp";
-    Client-->'GET/notes';
-    'text/html'<--Server;
-    Client-->'GET/main.css';
-    'text/css'<--Server;
-    Client-->'GET/main.js';
-    'application/javascript'<--Server;
-    Client-->'GET/data.json';
-    'application/json'<--Server;
+sequenceDiagram
+    participant Browser
+    participant Server
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Server->>Browser: Content-Type: text/html
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server->>Browser: Content-Type: text/css
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Server->>Browser: Content-Type: application/javascript
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server->>Browser: Content-Type: application/json
 ```
