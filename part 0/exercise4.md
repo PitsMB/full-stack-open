@@ -11,6 +11,6 @@ sequenceDiagram
     Server->>Browser: Content-Type: application/javascript
     Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     Server->>Browser: Content-Type: application/json
-    User->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    User->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa.json
     Server->>Browser: Content-Type: application/json
 ```
