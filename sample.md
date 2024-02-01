@@ -1,7 +1,7 @@
 ```mermaid
 graph TD;
-    Base url = https://studies.cs.helsinki.fi/exampleapp
-    Client-->GET/notes;
+    Base url = "https://studies.cs.helsinki.fi/exampleapp";
+    Client-->'GET/notes';
     'text/html'<--Server;
     Client-->'GET/main.css';
     'text/css'<--Server;
